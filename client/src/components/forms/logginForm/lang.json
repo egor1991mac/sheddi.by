@@ -1,0 +1,15 @@
+{
+    "ru": {
+        "email": {
+            "label": "Ваш email",
+            "placeholder": "Укажите ваш email",
+            "required": "true"
+        },
+        "password": {
+            "label": "Ваш пароль",
+            "placeholder": "Укажите ваш пароль",
+            "required": "true"
+        }
+    }
+
+}
