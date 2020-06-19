@@ -9,12 +9,12 @@ const CustomNavbar = () => {
 	const { onOpenAuthDialog } = useContext(GlobalContext);
 
 	return (
-		<Navbar className="w-100 align-items-center ">
+		<Navbar className="w-100">
 			<Link href="#index">
 				<Navbar.Brand>Sheddi</Navbar.Brand>
 			</Link>
 			<Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
-				<Nav>
+				<Nav className="align-items-center ">
 					<Nav.Link href="#index">Маршруты</Nav.Link>
 					<Nav.Link href="#home">Аренда</Nav.Link>
 					<NavDropdown alignRight title="Клиентам" id="basic-nav-dropdown">

@@ -3,17 +3,20 @@
         "email": {
             "label": "Ваш email",
             "placeholder": "Укажите ваш email",
-            "required": "true"
+            "required": "true",
+            "text": "loream ipsulm"
         },
         "phone": {
             "label": "Ваш номер телефона",
             "placeholder": "Ваш номер телефона",
-            "required": "true"
+            "required": "true",
+            "text": "loream ipsulm"
         },
         "password": {
             "label": "Ваш пароль",
             "placeholder": "Укажите ваш пароль",
-            "required": "true"
+            "required": "true",
+            "text": "loream ipsulm"
         },
         "submit": "Авторизоваться",
         "check": "Запомнить меня"
