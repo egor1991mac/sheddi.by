@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
-import lang from './lang';
-export default function LogginForm() {
-	console.log();
+
+export default function RegForm() {
 	return (
 		<Form>
-			<Form.Group controlId="formAuth">
+			<Form.Group controlId="RegForm">
 				<Form.Label>{lang[window.lang_key].email.label}</Form.Label>
 				<Form.Control type="email" placeholder={lang[window.lang_key].email.placeholder} />
 				<Form.Text className="text-muted">We'll never share your email with anyone else.</Form.Text>

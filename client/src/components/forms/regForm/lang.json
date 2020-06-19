@@ -5,11 +5,6 @@
             "placeholder": "Укажите ваш email",
             "required": "true"
         },
-        "phone": {
-            "label": "Ваш номер телефона",
-            "placeholder": "Ваш номер телефона",
-            "required": "true"
-        },
         "password": {
             "label": "Ваш пароль",
             "placeholder": "Укажите ваш пароль",

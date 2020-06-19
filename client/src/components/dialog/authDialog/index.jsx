@@ -1,16 +1,20 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import { createPortal } from 'react-dom';
 import { Modal, Tabs, Tab, Button } from 'react-bootstrap';
-import LogginForm from './forms/logginForm';
-import RegForm from './forms/regForm';
+import { GlobalContext } from '../../../store/context';
+import { MdClose } from 'react-icons/md';
+import LogginForm from '../../forms/logginForm';
+import RegForm from '../../forms/regForm';
+
 const AuthDialog = () => {
-	const [ show, setShow ] = useState(true);
+	const { state, OPEN_AUTH_DIALOG, onOpenAuthDialog = null } = useContext(GlobalContext);
+	console.log(OPEN_AUTH_DIALOG);
 	return createPortal(
 		<div>
-			<Modal id="authDialog" show={show}>
+			<Modal id="authDialog" show={OPEN_AUTH_DIALOG}>
 				<Modal.Body>
-					<Button onClick={() => setShow(!show)} className="btn-close-dialog">
-						X
+					<Button onClick={() => onOpenAuthDialog()} className="btn-clear btn-close-dialog">
+						<MdClose size="21px" />
 					</Button>
 					<Tabs className="text-4 justify-content-center mt-2 mb-4">
 						<Tab.Pane eventKey="login" title="Авторизация">

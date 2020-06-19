@@ -7,12 +7,10 @@
 
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-
-import { Container, Row, Col } from 'react-bootstrap';
-
 import Header from './header';
 import Navbar from './navBar';
-import AuthDialog from './authDialog';
+import AuthDialog from './dialog/authDialog';
+import GlobalState from '../store';
 
 const Layout = ({ children, pageInfo }) => (
 	<StaticQuery
@@ -27,9 +25,11 @@ const Layout = ({ children, pageInfo }) => (
 		`}
 		render={(data) => (
 			<div id="main-wrapper">
-				<Header />
-				<main>{children}</main>
-				<AuthDialog />
+				<GlobalState>
+					<Header />
+					<main>{children}</main>
+					<AuthDialog />
+				</GlobalState>
 			</div>
 		)}
 	/>

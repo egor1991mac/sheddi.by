@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'gatsby';
 
 import { Navbar, Nav, Button, NavDropdown } from 'react-bootstrap';
 import { BsFillPersonFill } from 'react-icons/bs';
+import { GlobalContext } from '../store/context';
 
-const CustomNavbar = ({ pageInfo }) => {
+const CustomNavbar = () => {
+	const { onOpenAuthDialog } = useContext(GlobalContext);
+
 	return (
-		<Navbar className="w-100 align-items-center">
+		<Navbar className="w-100 align-items-center ">
 			<Link href="#index">
 				<Navbar.Brand>Sheddi</Navbar.Brand>
 			</Link>
@@ -26,7 +29,7 @@ const CustomNavbar = ({ pageInfo }) => {
 
 					<Nav.Link href="#home">О компании</Nav.Link>
 					<div className="vertical-line" />
-					<Button className="btn-auth btn-clear" data-text="Войти">
+					<Button className="btn-auth btn-clear" data-text="Войти" onClick={onOpenAuthDialog}>
 						<span class="auth-icon">
 							<BsFillPersonFill />
 						</span>
