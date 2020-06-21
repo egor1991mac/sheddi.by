@@ -1,4 +1,4 @@
-import { IS_AUTH, OPEN_AUTH_DIALOG } from './const';
+import { IS_AUTH, OPEN_AUTH_DIALOG, MAIN_SLIDER_SLIDS } from './const';
 
 
 
@@ -14,8 +14,13 @@ export const Reducer = (state, { type = null, payload = null }) => {
             }
         case OPEN_AUTH_DIALOG:
             {
-                console.log(state)
+
                 return {...state, OPEN_AUTH_DIALOG: !state[OPEN_AUTH_DIALOG] }
+            }
+        case MAIN_SLIDER_SLIDS:
+            {
+
+                return {...state, MAIN_SLIDER_SLIDS: payload }
             }
         default:
             {

@@ -3,6 +3,7 @@ import { Row, Col, Container, ListGroup } from 'react-bootstrap';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import MainSearchForm from '../components/forms/mainSearchForm';
+import MainFormSlider from '../components/sliders/mainFormSlider';
 
 const IndexPage = () => (
 	<Layout pageInfo={{ pageName: 'index' }}>
@@ -14,7 +15,9 @@ const IndexPage = () => (
 					<Col lg="5" className="">
 						<MainSearchForm />
 					</Col>
-					<Col lg="7" />
+					<Col lg="7">
+						<MainFormSlider />
+					</Col>
 				</Row>
 			</Container>
 		</section>
