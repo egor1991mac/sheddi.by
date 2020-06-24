@@ -1,0 +1,164 @@
+{
+    "main_slider": [{
+            "img": "main_slider.jpg",
+            "title": "slide 1",
+            "subtitle": "Lorem ullamco sint consequat ea eu cillum consectetur quis cillum nostrud.",
+            "link": "/"
+        },
+        {
+            "img": "main_slider1.png",
+            "title": "slide 1",
+            "subtitle": "Lorem ullamco sint consequat ea eu cillum consectetur quis cillum nostrud.",
+            "link": "/"
+        },
+        {
+            "img": "main_slider2.png",
+            "title": "slide 1",
+            "subtitle": "Lorem ullamco sint consequat ea eu cillum consectetur quis cillum nostrud.",
+            "link": "/"
+        }
+    ],
+    "main_best_offers": [{
+            "title": "Из москвы в минск",
+            "date": "21.02.2020",
+            "cost": "400",
+            "currency": "USD",
+            "link": "/"
+        },
+        {
+            "title": "Из москвы в минск",
+            "date": "21.02.2020",
+            "cost": "400",
+            "currency": "USD",
+            "link": "/"
+        },
+        {
+            "title": "Из москвы в минск",
+            "date": "21.02.2020",
+            "cost": "400",
+            "currency": "USD",
+            "link": "/"
+        },
+        {
+            "title": "Из москвы в минск",
+            "date": "21.02.2020",
+            "cost": "400",
+            "currency": "USD",
+            "link": "/"
+        },
+        {
+            "title": "Из москвы в минск",
+            "date": "21.02.2020",
+            "cost": "400",
+            "currency": "USD",
+            "link": "/"
+        },
+        {
+            "title": "Из москвы в минск",
+            "date": "21.02.2020",
+            "cost": "400",
+            "currency": "USD",
+            "link": "/"
+        },
+        {
+            "title": "Из москвы в минск",
+            "date": "21.02.2020",
+            "cost": "400",
+            "currency": "USD",
+            "link": "/"
+        },
+        {
+            "title": "Из москвы в минск",
+            "date": "21.02.2020",
+            "cost": "400",
+            "currency": "USD",
+            "link": "/"
+        },
+        {
+            "title": "Из москвы в минск",
+            "date": "21.02.2020",
+            "cost": "400",
+            "currency": "USD",
+            "link": "/"
+        },
+        {
+            "title": "Из москвы в минск",
+            "date": "21.02.2020",
+            "cost": "400",
+            "currency": "USD",
+            "link": "/"
+        }
+    ],
+    "main_why_we_are": [{
+            "title": "title",
+            "subtitle": "subtitle",
+            "icon": "/"
+        },
+        {
+            "title": "title",
+            "subtitle": "subtitle",
+            "icon": "/"
+        },
+        {
+            "title": "title",
+            "subtitle": "subtitle",
+            "icon": "/"
+        },
+        {
+            "title": "title",
+            "subtitle": "subtitle",
+            "icon": "/"
+        },
+        {
+            "title": "title",
+            "subtitle": "subtitle",
+            "icon": "/"
+        }
+    ],
+    "main_question_answer": [{
+            "title": "Proident irure quis labore culpa.",
+            "text": "Ut qui adipisicing velit in aliquip in aute labore nisi non et culpa.s"
+        },
+        {
+            "title": "Proident irure quis labore culpa.",
+            "text": "Ut qui adipisicing velit in aliquip in aute labore nisi non et culpa.s"
+        },
+        {
+            "title": "Proident irure quis labore culpa.",
+            "text": "Ut qui adipisicing velit in aliquip in aute labore nisi non et culpa.s"
+        },
+        {
+            "title": "Proident irure quis labore culpa.",
+            "text": "Ut qui adipisicing velit in aliquip in aute labore nisi non et culpa.s"
+        },
+        {
+            "title": "Proident irure quis labore culpa.",
+            "text": "Ut qui adipisicing velit in aliquip in aute labore nisi non et culpa.s"
+        }
+    ],
+    "news": [{
+            "title": "Ipsum commodo sunt ex irure non",
+            "text": "Ipsum commodo sunt ex irure non sit anim anim anim minim.",
+            "date": "21.02.2020",
+            "see": "40",
+            "img": "main_slider2.png",
+            "link": "/"
+        },
+        {
+            "title": "Ipsum commodo sunt ex irure non",
+            "text": "Ipsum commodo sunt ex irure non sit anim anim anim minim.",
+            "date": "21.02.2020",
+            "see": "40",
+            "img": "main_slider2.png",
+            "link": "/"
+        },
+        {
+            "title": "Ipsum commodo sunt ex irure non",
+            "text": "Ipsum commodo sunt ex irure non sit anim anim anim minim.",
+            "date": "21.02.2020",
+            "see": "40",
+            "img": "main_slider2.png",
+            "link": "/"
+        }
+    ]
+}

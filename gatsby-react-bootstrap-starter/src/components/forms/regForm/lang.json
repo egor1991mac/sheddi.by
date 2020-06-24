@@ -1,0 +1,25 @@
+{
+    "ru": {
+        "email": {
+            "label": "Ваш email",
+            "placeholder": "Укажите ваш email",
+            "required": "true",
+            "text": "loream ipsulm"
+        },
+        "phone": {
+            "label": "Ваш номер телефона",
+            "placeholder": "Ваш номер телефона",
+            "required": "true",
+            "text": "loream ipsulm"
+        },
+        "password": {
+            "label": "Ваш пароль",
+            "placeholder": "Укажите ваш пароль",
+            "required": "true",
+            "text": "loream ipsulm"
+        },
+        "submit": "Зарегестрироваться",
+        "check": "Запомнить меня"
+    }
+
+}

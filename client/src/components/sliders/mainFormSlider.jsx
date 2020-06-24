@@ -15,7 +15,7 @@ export default function MainFormSlider() {
 							<Carousel.Caption>
 								{title ? <h3>{title}</h3> : ''}
 								{subtitle ? <p>{subtitle}</p> : ''}
-								{link ? <a href={link || ''}>{lang[window.lang_key].link}</a> : ''}
+								{link ? <a href={link || ''}>{lang['ru'].link}</a> : ''}
 							</Carousel.Caption>
 						</Carousel.Item>
 					);

@@ -1,0 +1,110 @@
+.dropdown {
+    [aria-expanded="true"]:after {
+        transition: .3s transform;
+        transform: rotate(180deg);
+    }
+    [aria-expanded="false"]:after {
+        transition: .3s transform;
+        transform: rotate(0deg);
+    }
+    &-menu {
+        animation: fadeOut;
+        animation-duration: .3s;
+        &.show {
+            animation: fadeIn;
+            animation-duration: .3s;
+        }
+    }
+}
+
+#authDialog {
+    .nav-tabs .nav-link {
+        border: 0;
+        position: relative;
+        color: #7b8084;
+        &.active {
+            color: #0c2f55;
+            &:after {
+                height: 3px;
+                width: 100%;
+                content: ' ';
+                background-color: #0071cc;
+                display: block;
+                position: absolute;
+                bottom: -3px;
+                left: 0;
+                -webkit-transform: translateY(-3px);
+                transform: translateY(-3px);
+            }
+        }
+    }
+}
+
+.btn {
+    &-close-dialog {
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        box-shadow: none !important;
+        color: black !important;
+    }
+    &-clear {
+        background-color: transparent !important;
+        padding: 0 !important;
+        border: 0 !important;
+        box-shadow: none !important;
+    }
+    &-auth {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        color: #7a7a7c !important;
+        padding-left: 0.5rem !important;
+        font-size: 14px !important;
+        &:before {
+            content: attr(data-text);
+        }
+    }
+}
+
+.auth-icon {
+    width: 34px;
+    height: 34px;
+    display: block;
+    background: var(--primary);
+    border-radius: 34px !important;
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-left: .5rem;
+}
+
+.vertical-line {
+    height: 30px;
+    width: 1px;
+    background-color: #e1e1e1;
+    margin: 0 15px;
+}
+
+.img-cover {
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-item {
+    padding-bottom: calc(100% - 2rem);
+    background: black;
+    img {
+        opacity: .7;
+    }
+}
+
+.accordion .card-header a.collapsed.active:before {
+    top: calc(50% + 2px);
+    transform: translate(-50%, -50%) rotate(-45deg);
+}

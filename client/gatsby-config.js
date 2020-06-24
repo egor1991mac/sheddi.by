@@ -7,6 +7,7 @@ module.exports = {
     },
     plugins: [
         `gatsby-plugin-react-helmet`,
+        `gatsby-plugin-catch-links`,
         {
             resolve: `gatsby-source-filesystem`,
             options: {
@@ -14,6 +15,7 @@ module.exports = {
                 path: `${__dirname}/src/images`,
             },
         },
+
         `gatsby-plugin-sass`,
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
@@ -29,13 +31,13 @@ module.exports = {
             },
         },
 
-        {
-            resolve: `gatsby-plugin-portal`,
-            options: {
-                key: 'portal',
-                id: 'portal',
-            },
-        },
+        // {
+        //     resolve: `gatsby-plugin-portal`,
+        //     options: {
+        //         key: 'portal',
+        //         id: 'portal',
+        //     },
+        // },
         // this (optional) plugin enables Progressive Web App + Offline functionality
         // To learn more, visit: https://gatsby.dev/offline
         // `gatsby-plugin-offline`,
