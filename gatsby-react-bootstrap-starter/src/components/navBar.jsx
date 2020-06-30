@@ -1,40 +1,36 @@
 import React, { useContext } from 'react';
-import { Link } from 'gatsby';
-
 import { Navbar, Nav, Button, NavDropdown } from 'react-bootstrap';
-import { BsFillPersonFill } from 'react-icons/bs';
+import Drawer from './dialog/drawer';
 import { GlobalContext } from '../store/context';
+import { MdPerson } from 'react-icons/md';
+import TopMobileMenu from './navs/topMobile';
+import TopDesctopMenu from './navs/topDesctop';
 
 const CustomNavbar = () => {
 	const { onOpenAuthDialog } = useContext(GlobalContext);
 
 	return (
-		<Navbar className="w-100">
-			<Navbar.Brand href="/">Sheddi</Navbar.Brand>
+		<Navbar collapseOnSelect expand="lg" className="w-100">
+			<Navbar.Brand href="/" className="d-flex">
+				<img src="logo.svg" style={{ maxWidth: '150px' }} alt="sheddi" />
+			</Navbar.Brand>
+			<div className="d-none d-lg-flex ml-auto">
+				<TopDesctopMenu />
+				<div className="vertical-line" />
+				<Button className="btn-auth btn-clear" data-text="Войти" onClick={onOpenAuthDialog}>
+					<span className="auth-icon">
+						<MdPerson />
+					</span>
+				</Button>
+			</div>
+			<div className="d-flex d-lg-none align-items-center">
+				<button className={'btn-clear btn-animate'} onClick={onOpenAuthDialog}>
+					<MdPerson size="28" className="cursor" />
+				</button>
 
-			<Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
-				<Nav className="align-items-center ">
-					<Nav.Link href="/">Маршруты</Nav.Link>
-					<Nav.Link href="/">Аренда</Nav.Link>
-					<NavDropdown alignRight title="Клиентам" id="basic-nav-dropdown">
-						<NavDropdown.Item href="#action/3.1">Оплата</NavDropdown.Item>
-						<NavDropdown.Item href="#action/3.2">Правила перевоза багажа</NavDropdown.Item>
-						<NavDropdown.Item href="#action/3.3">Договор публичной оферты</NavDropdown.Item>
-						<NavDropdown.Item href="#action/3.4">Как забронировать</NavDropdown.Item>
-						<NavDropdown.Item href="#action/3.4">Вопросы и ответы</NavDropdown.Item>
-					</NavDropdown>
-					<Nav.Link href="/page-2">Агенствам</Nav.Link>
-					<Nav.Link href="/page-2">Перевозчикам</Nav.Link>
-
-					<Nav.Link href="/page-2">О компании</Nav.Link>
-					<div className="vertical-line" />
-					<Button className="btn-auth btn-clear" data-text="Войти" onClick={onOpenAuthDialog}>
-						<span className="auth-icon">
-							<BsFillPersonFill />
-						</span>
-					</Button>
-				</Nav>
-			</Navbar.Collapse>
+				<div className="vertical-line" />
+				<TopMobileMenu />
+			</div>
 		</Navbar>
 	);
 };

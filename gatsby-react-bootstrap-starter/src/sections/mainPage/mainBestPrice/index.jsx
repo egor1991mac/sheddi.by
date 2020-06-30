@@ -17,7 +17,7 @@ export default function MainSectionBestPrice() {
 					<Row>
 						{MAIN_BEST_OFFERS.map((offers, index) => {
 							return (
-								<Col md={6} key={`${index}_bestOffers`}>
+								<Col lg="6" key={`${index}_bestOffers`}>
 									<BestOffersCard {...offers} />
 								</Col>
 							);

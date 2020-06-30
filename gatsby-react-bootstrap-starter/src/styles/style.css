@@ -3085,8 +3085,9 @@ h2.resp-accordion:first-child {
 #footer {
     color: #252b33;
     padding: 0px 0px 35px 0px;
-    padding: 0 0 2rem 0;
+    padding: 2rem 0;
     margin-top: 1.5rem;
+    background: #e9ecef;
 }
 
 #footer .nav .nav-item {
@@ -3125,7 +3126,7 @@ h2.resp-accordion:first-child {
 }
 
 #footer .footer-copyright {
-    border-top: 1px solid #e6e9ec;
+    border-top: 1px solid #d4d4d4;
     padding: 32px 0px 0px;
     margin-top: 2rem;
     margin-top: 32px;
@@ -3277,7 +3278,7 @@ h2.resp-accordion:first-child {
 }
 
 .social-icons li a {
-    background: #d4d4d4;
+    background: var(--primary);
     border-radius: 100%;
     display: block;
     height: 34px;
@@ -3315,7 +3316,7 @@ h2.resp-accordion:first-child {
 
 .social-icons li:hover a {
     background: #171717;
-    color: #333;
+    color: #e9ecef;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }

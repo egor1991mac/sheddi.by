@@ -13,9 +13,14 @@ export default function AccardionQuestion({ data = [] }) {
 			<Accordion id="questionAccardion">
 				{data.map(({ title = null, text = null }, index) => {
 					return (
-						<Card key={`${index}_question`}>
+						<Card key={`${index}_question`} className="rounded">
 							<Card.Header>
-								<Accordion.Toggle as="h5" eventKey={index} onClick={handleClick(index)}>
+								<Accordion.Toggle
+									as="h5"
+									eventKey={index}
+									className="mb-0"
+									onClick={handleClick(index)}
+								>
 									<a className="collapsed">{title}</a>
 								</Accordion.Toggle>
 							</Card.Header>

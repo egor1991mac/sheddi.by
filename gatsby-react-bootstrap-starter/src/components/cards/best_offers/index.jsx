@@ -4,10 +4,10 @@ export default function BestOffersCard({ title = null, date = null, cost = null,
 	return (
 		<Card className="d-flex flex-row mb-3">
 			<Card.Body className="p-3">
-				<Card.Title> {title ? title : ''}</Card.Title>
+				<div className="card-title h4"> {title ? title : ''}</div>
 				<Card.Subtitle>
 					{' '}
-					{date ? date : ''} / от {cost ? cost : ''}
+					от {cost ? cost : ''}
 					{currency ? currency : ''}
 				</Card.Subtitle>
 			</Card.Body>

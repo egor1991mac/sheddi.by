@@ -13,10 +13,12 @@ export default function LogginForm({ language = 'ru' }) {
 				<Form.Label>{lang[language].password.label}</Form.Label>
 				<Form.Control required type="password" placeholder={lang['ru'].password.placeholder} />
 			</Form.Group>
-			<Form.Group controlId="formBasicCheckbox">
-				<Form.Check type="checkbox" label={lang['ru'].check} />
-			</Form.Group>
-			<Button variant="primary" type="submit">
+			<Form.Row className="justify-content-center">
+				<Form.Group controlId="formBasicCheckbox">
+					<Form.Check type="checkbox" label={lang['ru'].check} />
+				</Form.Group>
+			</Form.Row>
+			<Button variant="primary" type="submit" className="btn-block">
 				{lang[language].submit}
 			</Button>
 		</Form>

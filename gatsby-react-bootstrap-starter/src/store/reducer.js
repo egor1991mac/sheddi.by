@@ -1,12 +1,6 @@
-import { IS_AUTH, OPEN_AUTH_DIALOG, MAIN_SLIDER_SLIDS } from './const';
-
-
-
-
+import { IS_AUTH, OPEN_AUTH_DIALOG, MAIN_SLIDER_SLIDS, TOGGLE_MOBILE_NAV } from './const';
 
 export const Reducer = (state, { type = null, payload = null }) => {
-
-
     switch (type) {
         case IS_AUTH:
             {
@@ -14,19 +8,20 @@ export const Reducer = (state, { type = null, payload = null }) => {
             }
         case OPEN_AUTH_DIALOG:
             {
-
-                return {...state, OPEN_AUTH_DIALOG: !state[OPEN_AUTH_DIALOG] }
+                return {...state, OPEN_AUTH_DIALOG: !state[OPEN_AUTH_DIALOG] };
+            }
+        case TOGGLE_MOBILE_NAV:
+            {
+                return {...state, TOGGLE_MOBILE_NAV: !state[TOGGLE_MOBILE_NAV] };
             }
         case MAIN_SLIDER_SLIDS:
             {
-
-                return {...state, MAIN_SLIDER_SLIDS: payload }
+                return {...state, MAIN_SLIDER_SLIDS: payload };
             }
+
         default:
             {
-                return state
+                return state;
             }
     }
-
-
-}
+};

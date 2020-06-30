@@ -13,10 +13,10 @@ export default function MainWhyWeAre() {
 		MAIN_WHY_WE_ARE.length && (
 			<div className="bg-white">
 				<Container as="section" className="py-5">
-					<Row md="5">
+					<Row className="justify-content-center">
 						{MAIN_WHY_WE_ARE.map((item, index) => {
 							return (
-								<Col key={`${index}_card_we_are`}>
+								<Col md="4" key={`${index}_card_we_are`} className="col-lg">
 									<WhyWeAreCard {...item} />
 								</Col>
 							);

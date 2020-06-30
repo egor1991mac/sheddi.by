@@ -10,7 +10,7 @@ export default function MainFormSlider() {
 			{MAIN_SLIDER_SLIDS &&
 				MAIN_SLIDER_SLIDS.map(({ img = null, title = null, subtitle = null, link = null }, index) => {
 					return (
-						<Carousel.Item key={`${index}_mainSlider`} className="position-relative">
+						<Carousel.Item key={`${index}_mainSlider`} className="position-relative rounded oveflow-hidden">
 							<img className="img-cover" src={img || ''} alt={title || ''} />
 							<Carousel.Caption>
 								{title ? <h3>{title}</h3> : ''}

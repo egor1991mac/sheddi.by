@@ -11,11 +11,13 @@ export default function RegForm({ language = 'ru' }) {
 					We'll never share your email with anyone else.
 				</Form.Text>
 			</Form.Group>
+
 			<Form.Group controlId="formBasicPassword">
 				<Form.Label>{lang[language].password.label}</Form.Label>
 				<Form.Control required type="password" placeholder={lang['ru'].password.placeholder} />
 			</Form.Group>
-			<Button variant="primary" type="submit">
+
+			<Button variant="primary" type="submit" className="btn-block">
 				{lang[language].submit}
 			</Button>
 		</Form>

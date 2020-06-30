@@ -1,4 +1,66 @@
 {
+    "main_navs_list": [{
+            "id": "1",
+            "title": "Маршруты",
+            "link": "/",
+            "children": []
+        },
+        {
+            "id": "2",
+            "title": "Аренда",
+            "link": "/",
+            "children": []
+        },
+        {
+            "id": "3",
+            "title": "Клиентам",
+            "link": "/",
+            "children": [{
+                    "id": "01",
+                    "title": "Оплата",
+                    "link": "/"
+                },
+                {
+                    "id": "02",
+                    "title": "Правила",
+                    "link": "/"
+                },
+                {
+                    "id": "03",
+                    "title": "Договор публиличной оферты",
+                    "link": "/"
+                },
+                {
+                    "id": "04",
+                    "title": "Как забронировать",
+                    "link": "/"
+                },
+                {
+                    "id": "05",
+                    "title": "Вопросы и ответы",
+                    "link": "/"
+                }
+            ]
+        },
+        {
+            "id": "6",
+            "title": "Агенствам",
+            "link": "/",
+            "children": []
+        },
+        {
+            "id": "4",
+            "title": "Перевозчикам",
+            "link": "/",
+            "children": []
+        },
+        {
+            "id": "5",
+            "title": "О компании",
+            "link": "/",
+            "children": []
+        }
+    ],
     "main_slider": [{
             "img": "main_slider.jpg",
             "title": "slide 1",
@@ -73,46 +135,32 @@
             "cost": "400",
             "currency": "USD",
             "link": "/"
-        },
-        {
-            "title": "Из москвы в минск",
-            "date": "21.02.2020",
-            "cost": "400",
-            "currency": "USD",
-            "link": "/"
-        },
-        {
-            "title": "Из москвы в минск",
-            "date": "21.02.2020",
-            "cost": "400",
-            "currency": "USD",
-            "link": "/"
         }
     ],
     "main_why_we_are": [{
-            "title": "title",
-            "subtitle": "subtitle",
-            "icon": "/"
+            "title": "Commodo nulla aliqua ",
+            "subtitle": "Sit enim aute qui minim.",
+            "icon": "/whyWeAre/bus.svg"
         },
         {
-            "title": "title",
-            "subtitle": "subtitle",
-            "icon": "/"
+            "title": "Nostrud cillum consequat ",
+            "subtitle": "Irure ea amet commodo nulla aliqua duis ",
+            "icon": "/whyWeAre/lock.svg"
         },
         {
-            "title": "title",
-            "subtitle": "subtitle",
-            "icon": "/"
+            "title": "Nostrud cillum consequat ",
+            "subtitle": "Irure  aliqua duis incididunt anim aliqua excepteur eu.",
+            "icon": "/whyWeAre/notifications.svg"
         },
         {
-            "title": "title",
-            "subtitle": "subtitle",
-            "icon": "/"
+            "title": "Nostrud cillum consequat ",
+            "subtitle": "Irure ea amet commodo nulla aliqua duis incididunt anim aliqua excepteur eu.",
+            "icon": "/whyWeAre/support.svg"
         },
         {
-            "title": "title",
-            "subtitle": "subtitle",
-            "icon": "/"
+            "title": "Nostrud cillum consequat ",
+            "subtitle": "Irure ea amet commodo nulla  eu.",
+            "icon": "/whyWeAre/thumb.svg"
         }
     ],
     "main_question_answer": [{
@@ -137,11 +185,11 @@
         }
     ],
     "news": [{
-            "title": "Ipsum commodo sunt ex irure non",
+            "title": "Pariatur cillum cupidatat nulla pariatur nulla amet ullamco nostrud aliquip irure.",
             "text": "Ipsum commodo sunt ex irure non sit anim anim anim minim.",
             "date": "21.02.2020",
             "see": "40",
-            "img": "main_slider2.png",
+            "img": "bus.jpg",
             "link": "/"
         },
         {
@@ -149,7 +197,7 @@
             "text": "Ipsum commodo sunt ex irure non sit anim anim anim minim.",
             "date": "21.02.2020",
             "see": "40",
-            "img": "main_slider2.png",
+            "img": "bus.jpg",
             "link": "/"
         },
         {
@@ -157,8 +205,128 @@
             "text": "Ipsum commodo sunt ex irure non sit anim anim anim minim.",
             "date": "21.02.2020",
             "see": "40",
-            "img": "main_slider2.png",
+            "img": "bus.jpg",
             "link": "/"
+        }
+    ],
+    "main_search_form": {
+        "direction": [{
+                "id": "1",
+                "name": "Минск пассажирский",
+                "groupName": "Республика беларусь",
+                "groupId": "123"
+            },
+            {
+                "id": "2",
+                "name": "Минск восточный",
+                "groupName": "Республика беларусь",
+                "groupId": "123"
+            }
+        ],
+        "dates": [
+            { "date": "21.08.2020", "cost": "1", "currency": "USD" },
+            { "date": "22.08.2020", "cost": "1", "currency": "USD" },
+            { "date": "09.08.2020", "cost": "1", "currency": "USD" }
+        ]
+    },
+    "payment": [{
+            "title": "americanexpress",
+            "img": "payment/americanexpress.jpg",
+            "link": "/"
+        },
+        {
+            "title": "assist",
+            "img": "payment/asist.svg",
+            "link": "/"
+        },
+        {
+            "title": "belcart",
+            "img": "payment/belcart.svg",
+            "link": "/"
+        },
+        {
+            "title": "pay",
+            "img": "payment/belcartinternet.svg",
+            "link": "/"
+        },
+        {
+            "title": "pay",
+            "img": "payment/mastercardsecure.svg",
+            "link": "/"
+        },
+        {
+            "title": "pay",
+            "img": "payment/matercard.svg",
+            "link": "/"
+        },
+        {
+            "title": "pay",
+            "img": "payment/visa.svg",
+            "link": "/"
+        },
+        {
+            "title": "pay",
+            "img": "payment/visasecure.svg",
+            "link": "/"
+        }
+    ],
+    "social": [{
+            "title": "fb",
+            "img": "/",
+            "link": "/",
+            "type": "fb"
+        },
+        {
+            "title": "vk",
+            "img": "/",
+            "link": "/",
+            "type": "vk"
+        },
+        {
+            "title": "tw",
+            "img": "/",
+            "link": "/",
+            "type": "tw"
+        },
+        {
+            "title": "inst",
+            "img": "/",
+            "link": "/",
+            "type": "inst"
+        },
+        {
+            "title": "telegram",
+            "img": "/",
+            "link": "/",
+            "type": "tl"
+        },
+        {
+            "title": "viber",
+            "img": "/",
+            "link": "/",
+            "type": "vb"
+        },
+        {
+            "title": "whatsapp",
+            "img": "/",
+            "link": "/",
+            "type": "wh"
+        }
+    ],
+    "contact": [{
+            "type": "tel",
+            "link": "+375111111",
+            "text": "+375(11) 111-11-11"
+        },
+        {
+            "type": "mail",
+            "link": "test@gmail.com",
+            "text": "test@gmail.com"
+        },
+        {
+            "type": "map",
+            "link": "test@gmail.com",
+            "text": "г. Минск ул. Киселева 10"
         }
     ]
 }

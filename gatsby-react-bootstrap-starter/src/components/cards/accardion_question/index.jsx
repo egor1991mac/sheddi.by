@@ -5,7 +5,7 @@ export default function AccardionQuestionCard({ title = null, text = null }) {
 	return (
 		<Card className="d-flex flex-row">
 			<Card.Body>
-				<Card.Title> {title ? title : ''}</Card.Title>
+				<Card.Title className="mb-0"> {title ? title : ''}</Card.Title>
 				<Card.Subtitle>
 					{' '}
 					{date ? date : ''} / от {cost ? cost : ''}
