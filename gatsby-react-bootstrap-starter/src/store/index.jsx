@@ -5,14 +5,17 @@ import {
 	IS_AUTH,
 	OPEN_AUTH_DIALOG,
 	MAIN_SLIDER_SLIDS,
-	MAIN_BEST_OFFERS,
+	OFFERS,
+	ROUTES,
+	TOP_NAVS,
 	MAIN_WHY_WE_ARE,
 	MAIN_QUESTION_ANSWER,
 	TOGGLE_MOBILE_NAV,
 	MAIN_NEWS,
 	SOCIAL,
 	CONTACT,
-	PAYMENT
+	PAYMENT,
+	SHOW_MORE_ROUTES
 } from './const';
 import demo from './demo.json';
 
@@ -27,27 +30,39 @@ export default function GlobalState({ children }) {
 	const onToggleMobileNav = () => {
 		dispatch({ type: TOGGLE_MOBILE_NAV, payload: null });
 	};
-
 	//main slider
 
+	//showMoreRoutes
+	const onShowMoreRoutes = (showLength) => {
+		const { ROUTES: { nowShowRoutes, allCountRoutes } } = state;
+		const showRoutes = parseInt(nowShowRoutes) + parseInt(showLength);
+
+		dispatch({ type: SHOW_MORE_ROUTES, payload: allCountRoutes > showRoutes ? showRoutes : allCountRoutes });
+	};
+
 	return (
-		<GlobalContext.Provider value={{ ...state, onOpenAuthDialog, onToggleMobileNav, lang: 'ru' }}>
+		<GlobalContext.Provider value={{ ...state, onOpenAuthDialog, onToggleMobileNav, onShowMoreRoutes, lang: 'ru' }}>
 			{children}
 		</GlobalContext.Provider>
 	);
 }
 
 const defaultState = {
-	IS_AUTH: false,
-	OPEN_AUTH_DIALOG: false,
-	TOGGLE_MOBILE_NAV: false,
-	MAIN_SLIDER_SLIDS: demo.main_slider,
-	MAIN_BEST_OFFERS: demo.main_best_offers,
-	MAIN_WHY_WE_ARE: demo.main_why_we_are,
-	MAIN_QUESTION_ANSWER: demo.main_question_answer,
-	MAIN_NEWS: demo.news,
-	SOCIAL: demo.social,
-	PAYMENT: demo.payment,
-	CONTACT: demo.contact,
-	TOP_NAVS: demo.main_navs_list
+	[IS_AUTH]: false,
+	[OPEN_AUTH_DIALOG]: false,
+	[TOGGLE_MOBILE_NAV]: false,
+	[MAIN_SLIDER_SLIDS]: demo.main_slider,
+	[OFFERS]: demo.offers,
+	[ROUTES]: {
+		data: demo.offers,
+		nowShowRoutes: 6,
+		allCountRoutes: demo.offers.length
+	},
+	[MAIN_WHY_WE_ARE]: demo.main_why_we_are,
+	[MAIN_QUESTION_ANSWER]: demo.main_question_answer,
+	[MAIN_NEWS]: demo.news,
+	[SOCIAL]: demo.social,
+	[PAYMENT]: demo.payment,
+	[CONTACT]: demo.contact,
+	[TOP_NAVS]: demo.main_navs_list
 };

@@ -1,4 +1,4 @@
-import { IS_AUTH, OPEN_AUTH_DIALOG, MAIN_SLIDER_SLIDS, TOGGLE_MOBILE_NAV } from './const';
+import { IS_AUTH, OPEN_AUTH_DIALOG, MAIN_SLIDER_SLIDS, TOGGLE_MOBILE_NAV, SHOW_MORE_ROUTES, ROUTES } from './const';
 
 export const Reducer = (state, { type = null, payload = null }) => {
     switch (type) {
@@ -17,6 +17,11 @@ export const Reducer = (state, { type = null, payload = null }) => {
         case MAIN_SLIDER_SLIDS:
             {
                 return {...state, MAIN_SLIDER_SLIDS: payload };
+            }
+        case SHOW_MORE_ROUTES:
+            {
+                console.log(payload);
+                return {...state, ROUTES: {...state.ROUTES, nowShowRoutes: payload } };
             }
 
         default:

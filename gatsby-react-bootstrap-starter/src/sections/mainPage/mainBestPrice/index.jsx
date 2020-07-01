@@ -6,18 +6,18 @@ import SectionSubTitle from '../../../components/title/section_subtitle';
 import { GlobalContext } from '../../../store/context';
 import BoxWhite from '../../../components/boxes/boxWhite';
 export default function MainSectionBestPrice() {
-	const { MAIN_BEST_OFFERS = [] } = useContext(GlobalContext);
+	const { OFFERS = [] } = useContext(GlobalContext);
 
 	return (
-		MAIN_BEST_OFFERS.length && (
+		OFFERS.length && (
 			<Container as="section">
 				<BoxWhite>
 					<SectionTitle>Лучшие предложения</SectionTitle>
 					<SectionSubTitle>Nulla minim laboris occaecat cillum aliqua dolore ipsum.</SectionSubTitle>
 					<Row>
-						{MAIN_BEST_OFFERS.map((offers, index) => {
+						{OFFERS.map((offers, index) => {
 							return (
-								<Col lg="6" key={`${index}_bestOffers`}>
+								<Col md="6" key={`${index}_bestOffers`}>
 									<BestOffersCard {...offers} />
 								</Col>
 							);

@@ -158,6 +158,11 @@
     & {
         color: #252b33;
     }
+    &-img-container {
+        position: relative;
+        min-height: 150px;
+        flex-basis: 35%;
+    }
 }
 
 .bg-form {
@@ -179,4 +184,26 @@
         transform: scale(0.8);
         transition: transform .1s;
     }
+}
+
+.route {
+    &-enter {
+        opacity: 0;
+    }
+    &-enter-active {
+        opacity: 1;
+        transition: opacity 1000ms ease-in;
+    }
+}
+
+.card:hover {
+    .display-onHover {
+        opacity: 1;
+        transition: opacity .3s;
+    }
+}
+
+.display-onHover {
+    opacity: 0;
+    transition: opacity .3s;
 }

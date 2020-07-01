@@ -16,7 +16,7 @@ export default function SectionMainNews() {
 
 				<CardDeck>
 					{MAIN_NEWS.map((news, index) => {
-						return <NewsCard key={`${index}_news`} {...news} />;
+						return <NewsCard key={`${index}_news`} {...news} index={index} />;
 					})}
 				</CardDeck>
 			</Container>

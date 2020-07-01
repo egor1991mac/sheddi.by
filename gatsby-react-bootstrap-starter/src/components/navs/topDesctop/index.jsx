@@ -7,7 +7,7 @@ export default function TopDesctop() {
 
 	return (
 		<Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav">
-			<Nav className="align-items-center ">
+			<Nav className="align-items-center">
 				{TOP_NAVS.length &&
 					TOP_NAVS.map(({ title, link, children = [], id }, index) => {
 						return !children.length ? (

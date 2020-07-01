@@ -8,7 +8,7 @@ export default function SubscribeForm() {
 					<Col>
 						<Form.Control size="sm" className="h-100" />
 					</Col>
-					<Col md="auto" className="input-group-append">
+					<Col xs="auto" className="input-group-append">
 						<Button variant="secondary" size="sm" type="submit">
 							Подписаться
 						</Button>

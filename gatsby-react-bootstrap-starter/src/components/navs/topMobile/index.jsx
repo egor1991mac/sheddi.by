@@ -8,17 +8,17 @@ import Contact from '../../contacts/contact';
 import Collapse from '../../collapse';
 import { Link } from 'gatsby';
 import { MdMenu } from 'react-icons/md';
-const duration = 300;
+const duration = 400;
 const defaultStyle = {
-	transition: `opacity ${duration}ms ease-in-out `,
-	opacity: 0
+	transition: `right ${duration}ms ease-in-out `,
+	right: '-640px'
 };
 
 const transitionStyles = {
-	entering: { opacity: 0 },
-	entered: { opacity: 1 },
-	exiting: { opacity: 0 },
-	exited: { opacity: 0 }
+	entering: { right: '-640px' },
+	entered: { right: 0 },
+	exiting: { right: '-640px' },
+	exited: { right: 0 }
 };
 //import Hamburger from 'hamburger-react';
 

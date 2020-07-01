@@ -22,8 +22,8 @@ const Drawer = ({ children, callback, styles }) => {
 			createPortal(
 				<div className="drawer-Wrapper" style={styles}>
 					<div ref={ref} className="drawer-Container">
-						<div className="drawer-header">
-							<button className={'btn-clear btn-animate text-white p-3 ml-auto'} onClick={callback}>
+						<div className="drawer-header p-2">
+							<button className={'btn-clear btn-animate text-white  ml-auto'} onClick={callback}>
 								<MdClose size="28" className="" />
 							</button>
 						</div>

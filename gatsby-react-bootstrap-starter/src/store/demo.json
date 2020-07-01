@@ -2,7 +2,7 @@
     "main_navs_list": [{
             "id": "1",
             "title": "Маршруты",
-            "link": "/",
+            "link": "/routes",
             "children": []
         },
         {
@@ -80,61 +80,77 @@
             "link": "/"
         }
     ],
-    "main_best_offers": [{
-            "title": "Из москвы в минск",
+    "offers": [{
+            "img": "bus.jpg",
+            "title": ["Москва", "Минск"],
             "date": "21.02.2020",
             "cost": "400",
             "currency": "USD",
-            "link": "/"
+            "link": "/",
+            "route": "В одну сторону"
         },
         {
-            "title": "Из москвы в минск",
+            "img": "bus.jpg",
+            "title": ["Москва", "Минск"],
             "date": "21.02.2020",
             "cost": "400",
             "currency": "USD",
-            "link": "/"
+            "link": "/",
+            "route": "В одну сторону"
         },
         {
-            "title": "Из москвы в минск",
+            "img": "bus.jpg",
+            "title": ["Москва", "Минск"],
             "date": "21.02.2020",
             "cost": "400",
             "currency": "USD",
-            "link": "/"
+            "link": "/",
+            "route": "В одну сторону"
         },
         {
-            "title": "Из москвы в минск",
+            "img": "bus.jpg",
+            "title": ["Москва", "Минск"],
             "date": "21.02.2020",
             "cost": "400",
             "currency": "USD",
-            "link": "/"
+            "link": "/",
+            "route": "В одну сторону"
         },
         {
-            "title": "Из москвы в минск",
+            "img": "bus.jpg",
+            "title": ["Москва", "Минск"],
             "date": "21.02.2020",
             "cost": "400",
             "currency": "USD",
-            "link": "/"
+            "link": "/",
+            "route": "В одну сторону"
         },
         {
-            "title": "Из москвы в минск",
+            "img": "bus.jpg",
+            "title": ["Москва", "Минск"],
             "date": "21.02.2020",
             "cost": "400",
             "currency": "USD",
-            "link": "/"
+            "link": "/",
+            "route": "В одну сторону"
         },
         {
-            "title": "Из москвы в минск",
+            "img": "bus.jpg",
+            "title": ["Москва", "Минск"],
             "date": "21.02.2020",
             "cost": "400",
             "currency": "USD",
-            "link": "/"
+            "link": "/",
+            "route": "В одну сторону"
         },
         {
-            "title": "Из москвы в минск",
+            "img": "bus.jpg",
+            "title": ["Москва", "Минск"],
             "date": "21.02.2020",
             "cost": "400",
             "currency": "USD",
-            "link": "/"
+            "link": "/",
+            "route": "В одну сторону"
         }
     ],
     "main_why_we_are": [{

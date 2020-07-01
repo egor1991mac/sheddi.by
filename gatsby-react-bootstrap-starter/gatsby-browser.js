@@ -5,8 +5,8 @@
  */
 
 // You can delete this file if you're not using it
+import './src/styles/bootstrap.css';
+import './src/styles/index.scss';
 
-import "./src/styles/index.scss"
-import "./src/styles/bootstrap.css"
-import "./src/styles/style.css"
-import "./src/styles/animation.scss"
+import './src/styles/style.css';
+import './src/styles/animation.scss';

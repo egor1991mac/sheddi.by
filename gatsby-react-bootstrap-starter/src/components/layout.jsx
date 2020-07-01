@@ -9,7 +9,6 @@ import React, { useContext } from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import Header from './header';
 import Footer from './footer';
-import Navbar from './navBar';
 import AuthDialog from './dialog/authDialog';
 import GlobalState from '../store';
 import { GlobalContext } from '../store/context';

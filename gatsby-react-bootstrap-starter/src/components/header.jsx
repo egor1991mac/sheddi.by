@@ -7,11 +7,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 const Header = ({ siteTitle }) => (
 	<header>
-		<Container>
-			<Row>
-				<NavBar />
-			</Row>
-		</Container>
+		<NavBar />
 	</header>
 );
 

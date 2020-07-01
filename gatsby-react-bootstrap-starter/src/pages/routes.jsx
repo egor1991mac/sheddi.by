@@ -3,18 +3,14 @@ import { Row, Col, Container, ListGroup } from 'react-bootstrap';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 // import MainSearctionFormVerticalSlider from '../sections/mainPage/mainSearchFormVerticalSlider';
-import SectionOffers = 
-import MainSectionQuestionAnwer from '../sections/mainPage/mainQuestionAnswer';
+import MainSearctionFormHorizontal from '../sections/mainPage/mainSearchFormHorizontal';
+import SectionRoutes from '../sections/routes/allRoutes';
 
 const IndexPage = () => (
-	<Layout pageInfo={{ pageName: 'index' }}>
+	<Layout pageInfo={{ pageName: 'routes' }}>
 		<SEO title="Home" keywords={[ `gatsby`, `react`, `bootstrap` ]} />
-		{/* <MainSearctionFormVerticalSlider /> */}
-		<MainSearctionFormHorizontal />
-		<MainSectionBestPrice />
-		<MainSectionWhyWeAre />
-		<MainSectionQuestionAnswer />
-		<MainSectionNews />
+		{/* <MainSearctionFormHorizontal /> */}
+		<SectionRoutes />
 	</Layout>
 );
 
