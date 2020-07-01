@@ -3,7 +3,7 @@ import { Form, Button, Col } from 'react-bootstrap';
 import lang from './lang';
 import { MdPlace, MdDateRange, MdPeople } from 'react-icons/md';
 
-export default function MainSearchForm({ language = 'ru', type = null }) {
+function MainSearchForm({ language = 'ru', type = null }, ref) {
 	if (type != 'hor') {
 		return (
 			<Fragment>
@@ -59,7 +59,7 @@ export default function MainSearchForm({ language = 'ru', type = null }) {
 	} else {
 		return (
 			<Fragment>
-				<Form id="bookingBus" className="d-block">
+				<Form id="bookingBus" className="d-block" ref={ref}>
 					<Form.Row>
 						<Form.Group controlId="departure" className="position-relative col-sm-6 col-lg">
 							{/* <Form.Label className="">{lang[language].departure.label}</Form.Label> */}
@@ -109,3 +109,5 @@ export default function MainSearchForm({ language = 'ru', type = null }) {
 		);
 	}
 }
+
+export default React.forwardRef(MainSearchForm);
